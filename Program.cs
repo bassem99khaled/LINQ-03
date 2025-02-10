@@ -116,8 +116,49 @@ namespace LINQ_03
             #endregion
             #endregion
 
-       
+            #region PartIoning Operators - Skip , SkipWhile , Take , TakeWhile , TakeLast , SkipLast
 
+            #region Take , Skip , TakeLast , SkipLast
+            // var Result = ProductList.Where(P => P.UnitsInStock > 0)
+            //                         .Skip(2)
+            //                         .Take(3);
+            // Result = ProductList.Where(P => P.UnitsInStock > 0)
+            //                     .SkipLast(5);
+            //
+            // var PageSize = 10;
+            // var PageIndex = 4;
+            //
+            // Result = ProductList.Where(P => P.UnitsInStock > 0)
+            //                     .Skip(PageSize * (PageIndex - 1))
+            //                     .Take(PageSize);
+            //
+            // foreach (var item in Result)
+            // {
+            //     Console.WriteLine(item);
+            // }
+            #endregion
+
+            #region TakeWhile , SkipWhile
+
+            //int[] Numbers = { 5, 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+
+            // Get the Elementss Stating from the begining of the array until a number is hit that is lrss than its Position in the array
+
+            //var Result = Numbers.TakeWhile((number, Index) => number > Index);
+
+            // get the element of arraay stating from the frist element Divisible by 3
+
+            //var Result = Numbers.SkipWhile(number => number % 3 != 0);
+            //
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+            #endregion
+
+     
 
         }
     }
