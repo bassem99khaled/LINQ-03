@@ -158,7 +158,36 @@ namespace LINQ_03
 
             #endregion
 
-     
+            #region lET / INTO
+
+          ////AEIOUaeiou
+          //
+          //var Names = new List<string>() { "Tom", "Jerry", "Mickey", "Donald", "Popeye", "Olive", "Pluto", "Goofy", "Daisy", "Minnie" };
+          //
+          //var Result = from Name in Names
+          //             select Regex.Replace(Name, "[aeiouAEIOU]", string.Empty)
+          //             // Restart Query With Introducing New Range Variable : "NoVowelNames"
+          //             into NoVowelNames
+          // where NoVowelNames.Length > 3
+          //    select NoVowelNames;
+          //
+          // Result = from Name in Names
+          //             let NoBowelNames = Regex.Replace(Name, "[aeiouAEIOU]", string.Empty)
+          //         // Continue Query with Adding Range Variable : "NoVowelNames"
+          //           
+          //             where NoVowelNames.Length > 3
+          //             select NoVowelNames;
+          //
+          //Result = Names.Select(Name => Regex.Replace(Name, "[aeiouAEIOU]", string.Empty))
+          //              .Where(NoVowelNames => NoVowelNames.Length > 3);
+          //
+          //foreach (var Name in Result)
+          //{
+          //    Console.WriteLine(Name);
+          //}
+          //
+            #endregion
+
 
         }
     }
